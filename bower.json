@@ -1,0 +1,23 @@
+{
+  "name": "bootstrap1",
+  "authors": [
+    "mrongSubho <imso0vo@gmail.com>"
+  ],
+  "description": "A simple bootstrap project",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^5.0.1",
+    "jquery": "^3.6.0",
+    "popper.js": "^2.9.2",
+    "font-awesome": "^5.15.3"
+  }
+}
