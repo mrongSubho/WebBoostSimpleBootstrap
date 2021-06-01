@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A simple Bootstrap project</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./bower_components/bootstrap-4/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css" 
+        integrity="sha512-3icgkoIO5qm2D4bGSUkPqeQ96LS8+ukJC7Eqhl1H5B2OJMEnFqLmNDxXVmtV/eq5M65tTDkUYS/Q0P4gvZv+yA==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    />
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="bg-dark collapse" id="topbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 py-4">
+                    <h4 class="text-white">
+                        About
+                    </h4>
+                    <p class="text-muted">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsum dicta odio, repellat totam minima.
+                    </p>
+                </div>
+                <div class="col-sm-4 py-4">
+                    <h4 class="text-white">
+                        Follow us!
+                    </h4>
+                    <a href="#" class="btn px-2">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="btn px-2">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="btn px-2">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fab fa-artstation">
+                    Hella!
+                </i>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topbar" >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mynav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">HTML</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CSS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Bootstrap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Node.js</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">React</a>
+                    </div>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fab fa-github" ></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fab fa-facebook" ></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fab fa-twitter" ></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fab fa-linkedin" ></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+     
+    <div class="container">
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4 position-relative">
+              <label for="validationTooltip01" class="form-label">First name</label>
+              <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
+              <div class="valid-tooltip">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4 position-relative">
+              <label for="validationTooltip02" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="validationTooltip02" value="Otto" required>
+              <div class="valid-tooltip">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4 position-relative">
+              <label for="validationTooltipUsername" class="form-label">Username</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+                <div class="invalid-tooltip">
+                  Please choose a unique and valid username.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 position-relative">
+              <label for="validationTooltip03" class="form-label">City</label>
+              <input type="text" class="form-control" id="validationTooltip03" required>
+              <div class="invalid-tooltip">
+                Please provide a valid city.
+              </div>
+            </div>
+            <div class="col-md-3 position-relative">
+              <label for="validationTooltip04" class="form-label">State</label>
+              <select class="form-select" id="validationTooltip04" required>
+                <option selected disabled value="">Choose...</option>
+                <option>...</option>
+              </select>
+              <div class="invalid-tooltip">
+                Please select a valid state.
+              </div>
+            </div>
+            <div class="col-md-3 position-relative">
+              <label for="validationTooltip05" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="validationTooltip05" required>
+              <div class="invalid-tooltip">
+                Please provide a valid zip.
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+          </form>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="jumbotron bg-dark" style="margin: 0;">
+        <div class="container align-items-center text-center">
+                <div class="btn-group my-2">
+                    <a href="bs-navbar.html">
+                        <div class="btn btn-sm btn-outline-primary">
+                            1
+                        </div>
+                    </a>
+                </div>
+                <div class="btn-group my-2">
+                    <a href="index.html">
+                        <div class="btn btn-sm btn-outline-primary">
+                            2
+                        </div>
+                    </a>
+                </div>
+                <div class="btn-group my-2">
+                    <a href="bs-grid1.html">
+                        <div class="btn btn-sm btn-outline-primary">
+                            3
+                        </div>
+                    </a>
+                </div>
+                <div class="btn-group my-2">
+                    <a href="bs-grid2.html">
+                        <div class="btn btn-sm btn-outline-primary">
+                            4
+                        </div>
+                    </a>
+                </div>
+                <div class="btn-group my-2">
+                    <a href="bs-jumbotron.html">
+                        <div class="btn btn-sm btn-outline-primary">
+                            5
+                        </div>
+                    </a>
+                </div>
+                <div class="btn-group my-2">
+                    <a href="bs-carousel.html">
+                        <div class="btn btn-sm btn-outline-primary">
+                            6
+                        </div>
+                    </a>
+                </div>
+                <div class="btn-group my-2">
+                    <a href="bs-card.html">
+                        <div class="btn btn-sm btn-outline-primary">
+                            7
+                        </div>
+                    </a>
+                </div>
+        </div>
+    </footer>
+    <!-- scripts -->
+    <script src="./bower_components/jquery/dist/jquery.js"></script>
+    <script src="./bower_components/popper.js"></script>
+    <script src="./bower_components/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>
