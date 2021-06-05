@@ -104,59 +104,195 @@
     <div class="container">
         <form class="row g-3 needs-validation" novalidate>
             <div class="col-md-4 position-relative">
-              <label for="validationTooltip01" class="form-label">First name</label>
-              <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
-              <div class="valid-tooltip">
-                Looks good!
-              </div>
-            </div>
-            <div class="col-md-4 position-relative">
-              <label for="validationTooltip02" class="form-label">Last name</label>
-              <input type="text" class="form-control" id="validationTooltip02" value="Otto" required>
-              <div class="valid-tooltip">
-                Looks good!
-              </div>
-            </div>
-            <div class="col-md-4 position-relative">
-              <label for="validationTooltipUsername" class="form-label">Username</label>
-              <div class="input-group has-validation">
-                <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
-                <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
-                <div class="invalid-tooltip">
-                  Please choose a unique and valid username.
+                <label for="validationTooltip01" class="form-label">First name</label>
+                <input type="text" class="form-control" id="validationTooltip01" value="Tora" required>
+                <div class="valid-tooltip">
+                    Looks good!
                 </div>
-              </div>
+            </div>
+            <div class="col-md-4 position-relative">
+                <label for="validationTooltip02" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="validationTooltip02" value="Helen" required>
+                <div class="valid-tooltip">
+                Looks good!
+                </div>
+            </div>
+            <div class="col-md-4 position-relative">
+                <label for="validationTooltipUsername" class="form-label">Username</label>
+                <div class="input-group has-validation">
+                    <span class="input-group-text" id="validationTooltipUsernamePrepend">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                    </span>
+                    <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+                    <div class="invalid-tooltip">
+                        Please choose a unique and valid username.
+                    </div>
+                </div>
             </div>
             <div class="col-md-6 position-relative">
-              <label for="validationTooltip03" class="form-label">City</label>
-              <input type="text" class="form-control" id="validationTooltip03" required>
-              <div class="invalid-tooltip">
-                Please provide a valid city.
-              </div>
+                <label for="validationTooltip03" class="form-label">City</label>
+                <input type="text" class="form-control" id="validationTooltip03" required>
+                <div class="invalid-tooltip">
+                     Please provide a valid city.
+                </div>
             </div>
             <div class="col-md-3 position-relative">
-              <label for="validationTooltip04" class="form-label">State</label>
-              <select class="form-select" id="validationTooltip04" required>
+                <label for="validationTooltip04" class="form-label">State</label>
+                <select class="form-select" id="validationTooltip04" required>
                 <option selected disabled value="">Choose...</option>
-                <option>...</option>
+                <option>N/A</option>
               </select>
               <div class="invalid-tooltip">
                 Please select a valid state.
               </div>
             </div>
             <div class="col-md-3 position-relative">
-              <label for="validationTooltip05" class="form-label">Zip</label>
-              <input type="text" class="form-control" id="validationTooltip05" required>
-              <div class="invalid-tooltip">
-                Please provide a valid zip.
-              </div>
+                <label for="validationTooltip05" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="validationTooltip05" required>
+                <div class="invalid-tooltip">
+                     Please provide a valid zip.
+                 </div>
             </div>
             <div class="col-12">
-              <button class="btn btn-primary" type="submit">Submit form</button>
+              <button class="btn btn-primary my-2" type="submit">Submit form</button>
             </div>
-          </form>
+        </form>
     </div>
 
+    <div class="container my-5">
+        <ul class="list-group">
+            <li class="list-group-item active" aria-current="true">An active item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A fourth item</li>
+            <li class="list-group-item disabled">And a fifth one</li>
+          </ul>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-5">
+                <div class="list-group my-5">
+                    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                      The current link item
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+                    <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+                    <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+                    <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">A disabled link item</a>
+                    <a href="#" class="list-group-item list-group-item-action">A fifth link item</a>
+                    <a href="#" class="list-group-item list-group-item-action">A sixth link item</a>
+                    <a href="#" class="list-group-item list-group-item-action">A seventh link item</a>
+                    <a href="#" class="list-group-item list-group-item-action">A eighth link item</a>
+                    
+                  </div>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-5">
+                <div class="list-group my-5">
+                    <a href="#" class="list-group-item list-group-item-action">A simple default list group item</a>
+                  
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-primary">A simple primary list group item</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">A simple secondary list group item</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-success">A simple success list group item</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-danger">A simple danger list group item</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-warning">A simple warning list group item</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-info">A simple info list group item</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-light">A simple light list group item</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group item</a>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A fourth item</li>
+            <li class="list-group-item">And a fifth one</li>
+          </ul>
+    </div>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-5">
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      A list item
+                      <span class="badge badge-primary badge-pill">14</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      A second list item
+                      <span class="badge badge-primary badge-pill">2</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      A third list item
+                      <span class="badge badge-primary badge-pill">1</span>
+                    </li>
+                  </ul>
+            </div>
+            <div class="col-7">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active">
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">List group item heading</h5>
+                        <small>3 days ago</small>
+                      </div>
+                      <p class="mb-1">Some placeholder content in a paragraph.</p>
+                      <small>And some small print.</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">List group item heading</h5>
+                        <small class="text-muted">3 days ago</small>
+                      </div>
+                      <p class="mb-1">Some placeholder content in a paragraph.</p>
+                      <small class="text-muted">And some muted small print.</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">List group item heading</h5>
+                        <small class="text-muted">3 days ago</small>
+                      </div>
+                      <p class="mb-1">Some placeholder content in a paragraph.</p>
+                      <small class="text-muted">And some muted small print.</small>
+                    </a>
+                  </div>
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    Launch demo modal
+                </button>
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            ...
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="jumbotron bg-dark" style="margin: 0;">
