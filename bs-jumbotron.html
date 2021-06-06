@@ -11,7 +11,11 @@
         crossorigin="anonymous" 
         referrerpolicy="no-referrer" 
     />
-    <link rel="stylesheet" href="./bower_components/bootstrap-4/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" 
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" 
+    crossorigin="anonymous">
+
+    <!-- <link rel="stylesheet" href="./bower_components/bootstrap-4/css/bootstrap.css"> -->
 
 
 </head>
@@ -107,7 +111,35 @@
     <div class="container">
         <div class="jumbotron text-danger text-center">
             <h1>Hi!</h1>
+            <!-- Example single danger button -->
+<div class="btn-group">
+    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Action
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+  </div>
+  
         </div>
+
+        <p>
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Link with href
+            </a>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              Button with data-target
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+            </div>
+          </div>
     </div>
 
     <!-- Footer -->
@@ -165,8 +197,8 @@
         </div>
     </footer>
     <!-- Javascript -->
-            <script src="./bower_components/jquery/dist/jquery.js"></script>
+            <!-- <script src="./bower_components/jquery/dist/jquery.js"></script>
             <script src="./bower_components/popper.js"></script>
-            <script src="./bower_components/bootstrap/dist/js/bootstrap.js"></script>
+            <script src="./bower_components/bootstrap/dist/js/bootstrap.js"></script> -->
 </body>
 </html>
